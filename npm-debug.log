@@ -2,85 +2,88 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'express-generator4' ]
+1 verbose cli   'mongose',
+1 verbose cli   '--save' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose cache add [ 'express-generator4', null ]
-6 verbose cache add name=undefined spec="express-generator4" args=["express-generator4",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'express-generator4',
-7 verbose parsed url   path: 'express-generator4',
-7 verbose parsed url   href: 'express-generator4' }
-8 silly lockFile b66361f1-express-generator4 express-generator4
-9 verbose lock express-generator4 C:\Users\KJ79607\AppData\Roaming\npm-cache\b66361f1-express-generator4.lock
-10 silly lockFile b66361f1-express-generator4 express-generator4
-11 silly lockFile b66361f1-express-generator4 express-generator4
-12 verbose addNamed [ 'express-generator4', '' ]
-13 verbose addNamed [ null, '*' ]
-14 silly lockFile a5fe3c0f-express-generator4 express-generator4@
-15 verbose lock express-generator4@ C:\Users\KJ79607\AppData\Roaming\npm-cache\a5fe3c0f-express-generator4.lock
-16 silly addNameRange { name: 'express-generator4', range: '*', hasData: false }
-17 verbose request where is /express-generator4
-18 verbose request registry https://registry.npmjs.org/
-19 verbose request id 4d84c621bcb0ef8d
-20 verbose url raw /express-generator4
-21 verbose url resolving [ 'https://registry.npmjs.org/', './express-generator4' ]
-22 verbose url resolved https://registry.npmjs.org/express-generator4
-23 verbose request where is https://registry.npmjs.org/express-generator4
-24 info trying registry request attempt 1 at 10:15:30
-25 http GET https://registry.npmjs.org/express-generator4
-26 http 404 https://registry.npmjs.org/express-generator4
-27 verbose headers { date: 'Thu, 30 Oct 2014 15:15:30 GMT',
-27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-27 verbose headers   'content-type': 'application/json',
-27 verbose headers   'cache-control': 'max-age=0',
-27 verbose headers   'content-length': '52',
-27 verbose headers   'accept-ranges': 'bytes',
-27 verbose headers   via: '1.1 varnish',
-27 verbose headers   age: '0',
-27 verbose headers   'x-served-by': 'cache-dfw1833-DFW',
-27 verbose headers   'x-cache': 'MISS',
-27 verbose headers   'x-cache-hits': '0',
-27 verbose headers   'x-timer': 'S1414682130.231729,VS0,VE44',
-27 verbose headers   'keep-alive': 'timeout=10, max=50',
-27 verbose headers   connection: 'Keep-Alive' }
-28 silly registry.get cb [ 404,
-28 silly registry.get   { date: 'Thu, 30 Oct 2014 15:15:30 GMT',
-28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-28 silly registry.get     'content-type': 'application/json',
-28 silly registry.get     'cache-control': 'max-age=0',
-28 silly registry.get     'content-length': '52',
-28 silly registry.get     'accept-ranges': 'bytes',
-28 silly registry.get     via: '1.1 varnish',
-28 silly registry.get     age: '0',
-28 silly registry.get     'x-served-by': 'cache-dfw1833-DFW',
-28 silly registry.get     'x-cache': 'MISS',
-28 silly registry.get     'x-cache-hits': '0',
-28 silly registry.get     'x-timer': 'S1414682130.231729,VS0,VE44',
-28 silly registry.get     'keep-alive': 'timeout=10, max=50',
-28 silly registry.get     connection: 'Keep-Alive' } ]
-29 silly lockFile a5fe3c0f-express-generator4 express-generator4@
-30 silly lockFile a5fe3c0f-express-generator4 express-generator4@
-31 error 404 404 Not Found: express-generator4
-31 error 404
-31 error 404 'express-generator4' is not in the npm registry.
-31 error 404 You should bug the author to publish it
-31 error 404
-31 error 404 Note that you can also install from a
-31 error 404 tarball, folder, or http url, or git url.
-32 error System Windows_NT 6.1.7601
-33 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express-generator4"
-34 error cwd C:\Users\KJ79607\WebstormProjects\ShopApp
-35 error node -v v0.10.32
-36 error npm -v 1.4.28
-37 error code E404
-38 verbose exit [ 1, true ]
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'mongose', null ]
+7 verbose cache add name=undefined spec="mongose" args=["mongose",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'mongose',
+8 verbose parsed url   path: 'mongose',
+8 verbose parsed url   href: 'mongose' }
+9 silly lockFile a9d45aa8-mongose mongose
+10 verbose lock mongose C:\Users\KJ79607\AppData\Roaming\npm-cache\a9d45aa8-mongose.lock
+11 silly lockFile a9d45aa8-mongose mongose
+12 silly lockFile a9d45aa8-mongose mongose
+13 verbose addNamed [ 'mongose', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 32b277af-mongose mongose@
+16 verbose lock mongose@ C:\Users\KJ79607\AppData\Roaming\npm-cache\32b277af-mongose.lock
+17 silly addNameRange { name: 'mongose', range: '*', hasData: false }
+18 verbose request where is /mongose
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 60e63893323b221f
+21 verbose url raw /mongose
+22 verbose url resolving [ 'https://registry.npmjs.org/', './mongose' ]
+23 verbose url resolved https://registry.npmjs.org/mongose
+24 verbose request where is https://registry.npmjs.org/mongose
+25 info trying registry request attempt 1 at 10:41:12
+26 http GET https://registry.npmjs.org/mongose
+27 http 404 https://registry.npmjs.org/mongose
+28 verbose headers { date: 'Thu, 30 Oct 2014 15:41:12 GMT',
+28 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '52',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1414683671.969780,VS0,VE257',
+28 verbose headers   'keep-alive': 'timeout=10, max=50',
+28 verbose headers   connection: 'Keep-Alive' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { date: 'Thu, 30 Oct 2014 15:41:12 GMT',
+29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '52',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     'x-served-by': 'cache-dfw1824-DFW',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1414683671.969780,VS0,VE257',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 silly lockFile 32b277af-mongose mongose@
+31 silly lockFile 32b277af-mongose mongose@
+32 error 404 404 Not Found: mongose
+32 error 404
+32 error 404 'mongose' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'ShopApp'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Windows_NT 6.1.7601
+34 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "mongose" "--save"
+35 error cwd C:\Users\KJ79607\WebstormProjects\ShopApp
+36 error node -v v0.10.32
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]
