@@ -1,14 +1,17 @@
+var TaskList = require('./routes/tasklist');
+var taskList = new TaskList('mongodb://shopapp:shopapp123@ds041167.mongolab.com:41167/shopapp');
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var taskList = new TaskList(process.env.MONGODB_URI);
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var TaskList = require('./routes/tasklist');
+
 
 var app = express();
 
@@ -28,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', taskList.showTasks.bind(taskList));
 app.post('/addtask', taskList.addTask.bind(taskList));
 app.post('/completetask', taskList.completeTask.bind(taskList));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
