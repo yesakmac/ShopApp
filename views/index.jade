@@ -21,21 +21,12 @@ block content
           td #{month + "/" + day + "/" + year}
           td
             input(type="checkbox", name="#{task._id}", value="#{!task.itemCompleted}", checked=task.itemCompleted)
-      input(type="submit", value="Update tasks")
+    input(type="submit", value="Update tasks")
   hr
-  form(action="/addtask", method="post" name="item")
-    table(border="1")
-      tr
-        td Item Name:
-        td
-          input(name="name", type="textbox")
-      tr
-        td Item Category:
-        td
-          input(name="category", type="textbox")
-      tr
-        td Item Priority:
-        td
-          input(name="priority", type="textbox")
-    input(type="submit", value="Add item")
+  form(action="/addtask", method="post" name="item" class="navbar-form navbar-left")
+    div.task(class="form-group input-group-lg")
+      input(name="name", type="textbox", class="form-control", placeholder="Name")
+      input(name="category", type="textbox", class="form-control",placeholder="Category")
+      input(name="priority", type="textbox", class="form-control", placeholder="Priority")
+    input(type="submit", class="btn btn-default", value="Add item")
   hr
