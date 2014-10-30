@@ -1,0 +1,25 @@
+//
+   Created by KJ79607 on 10/30/2014.
+extends layout
+block content
+   h1= title
+   h2 Completed Items
+      table(border="1", class="table table-striped")
+         tr
+            td Name
+            td Category
+            td Priority
+            td Date Added
+            td Completed
+            td Date Completed
+         each completeItems in tasks
+            tr
+               td #{completeItems.itemName}
+               td #{completeItems.itemCategory}
+               td #{completeItems.itemPriority}
+               - var day   = completeItems.itemDate.getDate();
+               - var month = completeItems.itemDate.getMonth() + 1;
+               - var year  = completeItems.itemDate.getFullYear();
+               td #{month + "/" + day + "/" + year}
+               td #{completeItems.itemCompleted}
+               td #{completeItems.itemDateCompleted}

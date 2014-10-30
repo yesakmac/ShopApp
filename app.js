@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var complete = require('./routes/complete');
 
 var app = express();
 
@@ -29,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //added for functionality to TaskList.JS Model
 app.get('/', taskList.showTasks.bind(taskList));
+app.get('/complete', taskList.showCompleteTasks.bind(taskList));
 app.post('/addtask', taskList.addTask.bind(taskList));
 app.post('/completetask', taskList.completeTask.bind(taskList));
 

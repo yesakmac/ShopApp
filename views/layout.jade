@@ -1,7 +1,48 @@
-doctype html
+doctype HTML
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js')
   body
+    .navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Node + Mongo + Bootstrap + Azure
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+            li
+              a(href='/Complete') Completed Tasks
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Dropdown
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li.dropdown-header Nav header
+                li
+                  a(href='#') Separated link
+                li
+                  a(href='#') One more separated link
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='https://twitter.com/kasey_clark') Thrown together by @kasey_clark
+
+        // /.nav-collapse
+    .container
     block content
